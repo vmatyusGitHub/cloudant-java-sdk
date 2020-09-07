@@ -35,7 +35,6 @@ public class ApiKeysResultTest {
   @Test
   public void testApiKeysResult() throws Throwable {
     ApiKeysResult apiKeysResultModel = new ApiKeysResult();
-    assertNull(apiKeysResultModel.isOk());
     assertNull(apiKeysResultModel.getKey());
     assertNull(apiKeysResultModel.getPassword());
   }

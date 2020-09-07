@@ -5389,7 +5389,7 @@ public class CloudantTest extends PowerMockTestCase {
   @Test
   public void testPostApiKeysWOptions() throws Throwable {
     // Schedule some responses.
-    String mockResponseBody = "{\"ok\": true, \"key\": \"key\", \"password\": \"password\"}";
+    String mockResponseBody = "{\"key\": \"key\", \"password\": \"password\"}";
     String postApiKeysPath = java.net.URLEncoder.encode("/_api/v2/api_keys", "UTF-8").replace("%2F", "/");
 
     server.enqueue(new MockResponse()
